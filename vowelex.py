@@ -12,3 +12,9 @@ input_line = int(input())
 for i in range(input_line):
     n = input()
     print(n)
+
+# 繰り返し出力
+input_line = 'one two three four five'
+n = input_line.split()
+for i in n:
+    print(i)
