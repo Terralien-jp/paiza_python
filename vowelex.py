@@ -18,3 +18,13 @@ input_line = 'one two three four five'
 n = input_line.split()
 for i in n:
     print(i)
+
+# Tomato
+lerning = 25
+rest = 5
+tomato = lerning + rest
+print("トータル勉強トマト")
+tomats = int(input())
+
+tomato *= tomats
+print(str(tomato / 60) + "時間勉強した")
