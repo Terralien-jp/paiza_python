@@ -17,9 +17,19 @@ print(input_line.upper())
 
 ### 改行文字をなくして連結する
 print("令和" + str(reiwa) + "年", end="")
+
 print(str(month) + "月")
+
 令和4年3月のように出力される
+
+### len関数
+```python
+tea = ["緑茶", "紅茶", "烏龍茶"]
+print(len(tea))
+3
+```
 
 ## CamelCase or snake_case
 Class名はUpperCamelCase
+
 それ以外はsnake_case
