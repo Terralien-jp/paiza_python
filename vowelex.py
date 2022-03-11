@@ -28,3 +28,15 @@ tomats = int(input())
 
 total_tomato = tomato * tomats
 print(str(tomato / 60) + "時間勉強した")
+
+# 配列内配列動くけど力技過ぎて納得行かない
+n = int(input())
+m = [input().split() for _ in range(n)]
+for i in range(n):
+    # m[i]のままだと上手くdelできないので別の変数に
+    o = m[i]
+    # listの先頭を除去（求められた仕様）
+    del o[0]
+    # listを並列して出力するおまじない
+    o=' '.join(o)
+    print(o)

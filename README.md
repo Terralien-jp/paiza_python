@@ -40,6 +40,17 @@ print(len(tea))
 3
 ```
 
+### del list内要素を削除
+```python
+del o[0]
+```
+
+### join() list内容を横に並べて出力
+出力する数字の間にブランクを挿入している
+```python
+o=' '.join(o)
+```
+
 ## CamelCase or snake_case
 Class名はUpperCamelCase
 
