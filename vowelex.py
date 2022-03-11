@@ -47,3 +47,8 @@ for i in range(100):
         print(i + 1, end=" ")
     else:
         print(i + 1)
+
+# 標準入力からの100の文字列を空listに追加する。
+str = []
+for i in range(100):
+    str.append(input())

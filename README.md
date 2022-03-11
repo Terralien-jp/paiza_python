@@ -54,6 +54,11 @@ o=' '.join(o)
 ### 引数なしのprint()
 改行として扱われる
 
+### sep 配列を1要素ずつカンマ区切りで出力
+```python
+print(*n, sep=",")
+```
+
 ## CamelCase or snake_case
 Class名はUpperCamelCase
 
