@@ -51,6 +51,9 @@ del o[0]
 o=' '.join(o)
 ```
 
+### 引数なしのprint()
+改行として扱われる
+
 ## CamelCase or snake_case
 Class名はUpperCamelCase
 

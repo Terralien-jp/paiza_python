@@ -40,3 +40,10 @@ for i in range(n):
     # listを並列して出力するおまじない
     o=' '.join(o)
     print(o)
+
+# 1 - 100 までの数値を間に空白をあけつつ出力する。ただし最後の数値には空白をつけない。
+for i in range(100):
+    if i != 99:
+        print(i + 1, end=" ")
+    else:
+        print(i + 1)
