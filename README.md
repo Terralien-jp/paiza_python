@@ -59,6 +59,16 @@ o=' '.join(o)
 print(*n, sep=",")
 ```
 
+#### 別解答 .join() メソッドを使う
+```python
+print(",".join(S))
+```
+
+### .format() を使用して1000の位にカンマ区切り
+```python
+n = '{:,}'.format(1000)
+```
+
 ## CamelCase or snake_case
 Class名はUpperCamelCase
 

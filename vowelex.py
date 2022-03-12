@@ -52,3 +52,11 @@ for i in range(100):
 str = []
 for i in range(100):
     str.append(input())
+
+# 3行3列を出力するコード。自分で書いてクソみたいだなと思ってたらほぼ正解で困惑。
+n = input().split()
+for i in range(len(n)):
+    if (i+1) % 3 == 0:
+        print(n[i])
+    else:
+        print(str(n[i])+' ', end='')
