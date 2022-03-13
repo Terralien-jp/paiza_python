@@ -69,6 +69,9 @@ print(",".join(S))
 n = '{:,}'.format(1000)
 ```
 
+### 3文字スライス
+print(n[:3])
+
 ## CamelCase or snake_case
 Class名はUpperCamelCase
 

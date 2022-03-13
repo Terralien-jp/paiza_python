@@ -60,3 +60,22 @@ for i in range(len(n)):
         print(n[i])
     else:
         print(str(n[i])+' ', end='')
+
+# ２重ループで9*9出力するコード
+i = 1
+while i <= 9:
+	j = 1
+	while j <= 9:
+		print(i * j, end=" ")
+		j = j + 1
+    #空printは改行
+	print()
+	i = i + 1
+
+# 同じく
+for i in range(1,10):
+	for j in range(1,10):
+	    if j == 9:
+	        print(i*j)
+	    else:
+	        print(i*j, end=" ")
