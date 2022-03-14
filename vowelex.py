@@ -92,3 +92,28 @@ for j in range(1,int(n[1])+1):
         print(n[1])
     else:
         print(j, end=" ")
+
+# なんか納得行かないｗ
+N = int(input())
+for i in range(1, N+1):
+    for j in range(1, i+1):
+        if j == i:
+            print(j)
+        else:
+            print(j, end=" ")
+# 微妙に納得行かないｗ
+N = int(input())
+
+M = [0] * N
+values = input().split()
+# listにintでvaluesを代入していく（listをint化するため？）
+for i in range(N):
+    M[i] = int(values[i])
+# 二重ループ処理、以降は前の問題と同じ
+for i in range(N):
+    for j in range(1, M[i] + 1):
+        # 最大値を比較する対象がM[i]の値となる
+        if j == M[i]:
+            print(j)
+        else:
+            print(j, end=" ")
