@@ -117,3 +117,25 @@ for i in range(N):
             print(j)
         else:
             print(j, end=" ")
+
+# B相当の問題らしい↑の問題の応用で解ける※変数名がクソなのはいつものこと
+N = input().split() #標準入力1行目（N[1]のみ使った）
+M = input().split() #標準入力2行目
+K = [0] * int(N[1]) # [0, 0, 0, 0]
+# 標準入力3行目をlistにする（split()を使用するためにこの時点ではstr）
+values = input().split()
+# int型listに変換してる感じ
+for i in range(int(N[1])):
+    K[i] = int(values[i])
+# 出力用カウント変数
+L = 0
+
+# 今回のハマリポイントややこしいことせずにこれだけで解ける
+# 他の言語で言うところのforeachでイテラブルオブジェクトK[2, 6, 1, 1]が順に代入される
+for i in K:
+    for j in range(i):
+        if j == i - 1:
+            print(M[L])
+        else:
+            print(M[L], end=" ")
+        L += 1

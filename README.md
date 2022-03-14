@@ -85,6 +85,12 @@ print(len(str(n)))
 X = [i for i in range(N) if i % 2 == 0]
 ```
 
+### foreachに相当するイテラブルオブジェクト
+```python
+for i in K:
+```
+配列を順に読み込む
+
 ## CamelCase or snake_case
 Class名はUpperCamelCase
 
