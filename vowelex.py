@@ -79,3 +79,16 @@ for i in range(1,10):
 	        print(i*j)
 	    else:
 	        print(i*j, end=" ")
+
+# 自分ではクソコードだと思ってるのにほぼあってたときの悲しみ
+n = input().split()
+for i in range(1,int(n[0])+1):
+    if i % int(n[0]) == 0:
+        print(n[0])
+    else:
+        print(i, end=" ")
+for j in range(1,int(n[1])+1):
+    if j % int(n[1]) == 0:
+        print(n[1])
+    else:
+        print(j, end=" ")

@@ -70,7 +70,20 @@ n = '{:,}'.format(1000)
 ```
 
 ### 3文字スライス
+```python
 print(n[:3])
+```
+
+### 桁数の表示
+```python
+print(len(str(n)))
+```
+## Technique
+
+### 偶数のみ抽出
+```python
+X = [i for i in range(N) if i % 2 == 0]
+```
 
 ## CamelCase or snake_case
 Class名はUpperCamelCase
