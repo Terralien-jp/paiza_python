@@ -78,6 +78,21 @@ print(n[:3])
 ```python
 print(len(str(n)))
 ```
+### .format()メソッドを使用して小数点3桁固定
+```Python
+print('{:.3f}'.format(N))
+```
+
+### .format()は複数の引数が使える。また左から引数が対になるため下記のように省略が可能
+```python
+print("{:.{}f}".format(N, M))
+```
+### .format()3桁で空きは空白で埋めるの書き方は以下
+```python
+print("{: >3}".format(n))
+# 右揃えでx桁に足りない部分をiで埋める書式
+"{:i>x}"
+```
 ## Technique
 
 ### 偶数のみ抽出

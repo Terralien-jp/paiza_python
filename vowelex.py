@@ -101,6 +101,7 @@ for i in range(1, N+1):
             print(j)
         else:
             print(j, end=" ")
+            
 # 微妙に納得行かないｗ
 N = int(input())
 
