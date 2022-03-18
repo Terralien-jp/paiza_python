@@ -93,6 +93,12 @@ print("{: >3}".format(n))
 # 右揃えでx桁に足りない部分をiで埋める書式
 "{:i>x}"
 ```
+
+# , 区切り
+```python
+print(X, Y)
+```
+
 ## Technique
 
 ### 偶数のみ抽出
@@ -105,6 +111,9 @@ X = [i for i in range(N) if i % 2 == 0]
 for i in K:
 ```
 配列を順に読み込む
+
+### map(#, #)第一引数にINTなど変更したい関数
+a, b = map(int, input().split())
 
 ## CamelCase or snake_case
 Class名はUpperCamelCase

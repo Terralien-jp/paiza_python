@@ -140,3 +140,27 @@ for i in K:
         else:
             print(M[L], end=" ")
         L += 1
+
+# 辞書を使った文字変換
+m = {'A':'4',  'E':'3', 'G':'6'}
+t = ''.join(m.get(c, c) for c in s)
+
+# 罫線あり九九
+i = 1
+for i in range(1,10):
+	for j in range(1,10):
+	    if j == 9:
+	        k = i * j
+	        print("{: >2}".format(k))
+	    else:
+	        k = i * j
+	        print("{: >2} | ".format(k), end="")
+# こういう手もある
+        # print("{: >2}".format(i * j), end="")
+        # if j == 9:
+        #     print()
+        # else:
+        #     print(end=" | ")
+	if i < 9:
+	    print("=" * (9 * 2 + 3 * (9-1)))
+
