@@ -94,10 +94,20 @@ print("{: >3}".format(n))
 "{:i>x}"
 ```
 
-# , 区切り
+### , 区切り
 ```python
 print(X, Y)
 ```
+### 論理積
+```python
+print(a and b)
+```
+
+### notを数値で表示（逆の数字を表示）
+```python
+print(int(not n))
+```
+
 
 ## Technique
 
