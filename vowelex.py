@@ -164,3 +164,8 @@ for i in range(1,10):
 	if i < 9:
 	    print("=" * (9 * 2 + 3 * (9-1)))
 
+### in演算子
+if 0 in a:
+    print("NO")
+else:
+    print("YES")

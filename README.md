@@ -107,7 +107,25 @@ print(a and b)
 ```python
 print(int(not n))
 ```
+### xor
+```python
+print(a^b)
+```
 
+### nand
+```python
+print(int(not (a and b)))
+```
+
+### nor
+```python
+print(int(not (a or b)))
+```
+
+### xnor(not xor)
+```python
+print(int(not (a ^ b)))
+```
 
 ## Technique
 
@@ -124,6 +142,13 @@ for i in K:
 
 ### map(#, #)第一引数にINTなど変更したい関数
 a, b = map(int, input().split())
+
+### ドモルガンの法則による解法
+```python
+print(int(not((not (a) and not (b)) or not (c)) ^ d))
+# 以下のように変換できる
+print(((a or b) and c) ^ d)
+```
 
 ## CamelCase or snake_case
 Class名はUpperCamelCase
