@@ -14,6 +14,11 @@ print(n[0])
 print(n[1])
 ```
 
+### map()じゃあかんのか？
+```python
+a, b = [int(x) for x in input().split()]
+```
+
 ## 標準出力
 ### 文字列に変換
 str() 
@@ -128,6 +133,17 @@ print(int(not (a ^ b)))
 ```
 
 ## Technique
+### 
+```python
+```
+
+### ord() Unicodeのコードポイントを調べる
+下記のord("A")とord("A")は大文字を表します。
+```python
+if ord(c) >= ord("A") and ord(c) <= ord("Z"):
+```
+
+別解答として`isupper()`を用いることもできる。
 
 ### 偶数のみ抽出
 ```python
