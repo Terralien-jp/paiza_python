@@ -169,3 +169,9 @@ if 0 in a:
     print("NO")
 else:
     print("YES")
+
+### ソートする問題
+n = int(input())
+num = [int(x) for x in input().split()]
+num.sort()
+print(*num, sep=', ')

@@ -156,8 +156,14 @@ for i in K:
 ```
 配列を順に読み込む
 
-### map(#, #)第一引数にINTなど変更したい関数
+### list
+map(#, #)第一引数にINTなど変更したい関数
+```python
+# mapによる
 a, b = map(int, input().split())
+# 別の方法
+n, k, t = [int(x) for x in input().split()]
+```
 
 ### ドモルガンの法則による解法
 ```python
