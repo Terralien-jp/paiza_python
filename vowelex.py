@@ -175,3 +175,36 @@ n = int(input())
 num = [int(x) for x in input().split()]
 num.sort()
 print(*num, sep=', ')
+
+
+### 内包表記でかいけつ
+
+text= input()
+def n_gram(text, n):
+    return [ text[idx:idx + n] for idx in range(len(text) -n + 1)]
+
+print(n_gram(text, 1))
+
+print(n_gram(text, 2))
+
+print(n_gram(text, 3))
+
+
+## 力技
+
+text = input()
+
+ret = []
+ret2 = []
+ret3 = []
+for i in range(len(text)):
+    ret.append(text[i])
+print(ret)
+    
+for i in range(len(text) -1):
+    ret2.append(text[i:i+2])
+print(ret2)
+
+for i in range(len(text) -2):
+    ret3.append(text[i:i+3])
+print(ret3)
