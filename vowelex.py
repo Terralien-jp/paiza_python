@@ -208,3 +208,12 @@ print(ret2)
 for i in range(len(text) -2):
     ret3.append(text[i:i+3])
 print(ret3)
+
+## while 2で何回割り切れるか
+
+n = int(input())
+even = 0
+while n % 2 == 0:
+        even += 1
+        n /= 2
+print(even)
