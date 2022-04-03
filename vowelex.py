@@ -217,3 +217,24 @@ while n % 2 == 0:
         even += 1
         n /= 2
 print(even)
+
+
+## n進数に変換
+
+N,M=map(int,input().split())
+
+array=[]
+while N>=1:
+    array.append(N%M)
+    N/=M
+    N=int(N)
+
+array=list(reversed(array))
+
+answer=0
+
+for num in array:
+    answer*=10
+    answer+=num
+    
+print(answer)
