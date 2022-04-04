@@ -238,3 +238,13 @@ for num in array:
     answer+=num
     
 print(answer)
+
+## n!の末尾に０がいくつ付くか？
+###実は因数分解の問題のためn/5がいくつあるかをカウントする
+
+n = int(input())
+count_zero = 0
+while n > 0:
+    count_zero += int(n / 5)
+    n /= 5
+print(count_zero)
