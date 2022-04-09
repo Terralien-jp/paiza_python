@@ -14,6 +14,11 @@ print(n[0])
 print(n[1])
 ```
 
+### map()
+```python
+a, b = map(int, input().split())
+```
+
 ### map()じゃあかんのか？
 ```python
 a, b = [int(x) for x in input().split()]
@@ -176,3 +181,22 @@ print(((a or b) and c) ^ d)
 Class名はUpperCamelCase
 
 それ以外はsnake_case
+
+## 画像繰り返し
+# 画像用辞書
+items_imges = {
+    "剣" : "http://paiza.jp/learning/images/sword.png",
+    "盾" : "http://paiza.jp/learning/images/shield.png",
+    "回復薬" : "http://paiza.jp/learning/images/potion.png",
+    "クリスタル" : "http://paiza.jp/learning/images/crystal.png"
+}
+
+# ここから下を記述しよう
+# 出力するアイテム数を変数に代入
+item_cnt = int(input())
+
+# 標準入力にあるアイテムを出力する
+while item_cnt > 0:
+  item = input()
+  print("<img src = '" + items_imges[item] + "'>")
+  item_cnt = item_cnt - 1
