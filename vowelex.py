@@ -248,3 +248,9 @@ while n > 0:
     count_zero += int(n / 5)
     n /= 5
 print(count_zero)
+
+### enumarate
+enemies = ["スライム", "モンスター", "ゾンビ", "ドラゴン", "魔王"]
+# ここに、要素をループで表示するコードを記述する
+for (i, number) in enumerate(enemies):
+    print(str(i+1) + "番目の"+ number +"が現れた")

@@ -196,7 +196,12 @@ items_imges = {
 item_cnt = int(input())
 
 # 標準入力にあるアイテムを出力する
+```python
 while item_cnt > 0:
   item = input()
   print("<img src = '" + items_imges[item] + "'>")
   item_cnt = item_cnt - 1
+```
+
+### enumarate()
+列挙する
