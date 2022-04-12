@@ -265,3 +265,53 @@ for i in numbers:
     numbers2.append(i * 3)
 
 print(numbers2)
+
+# ドットで文字を出力しよう
+
+letter_A = [[0,0,1,1,0,0],
+            [0,1,0,0,1,0],
+            [1,0,0,0,0,1],
+            [1,1,1,1,1,1],
+            [1,0,0,0,0,1],
+            [1,0,0,0,0,1]]
+
+# ここに、ドットを表示するコードを記述する
+for list in letter_A:
+    for dot in list:
+        if dot == 1:
+            print("@", end="")
+        elif dot == 0:
+            print(" ", end="")
+    print("")
+print()
+
+# 2次元リストで画像を配置
+# 標準入力内容
+
+1,1,1,1
+0,0,0,0
+2,3,4,2
+_
+
+# 画像用リスト
+players_img = [
+    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Empty.png",
+    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Dragon.png",
+    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Crystal.png",
+    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Hero.png",
+    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Heroine.png"]
+    
+team = []
+while True:
+    line = input()
+    if line == "_":
+        break
+    team.append(line.split(","))
+
+print("<table>")
+for line in team:
+    print("<tr>")
+    for person in line:
+        print("<td><img src='" + players_img[int(person)] + "'></td>")
+    print("</tr>")
+print("</table>")
