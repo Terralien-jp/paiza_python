@@ -295,11 +295,11 @@ _
 
 # 画像用リスト
 players_img = [
-    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Empty.png",
-    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Dragon.png",
-    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Crystal.png",
-    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Hero.png",
-    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Heroine.png"]
+    "Empty.png",
+    "Dragon.png",
+    "Crystal.png",
+    "Hero.png",
+    "Heroine.png"]
     
 team = []
 while True:
@@ -315,3 +315,15 @@ for line in team:
         print("<td><img src='" + players_img[int(person)] + "'></td>")
     print("</tr>")
 print("</table>")
+
+# list初期化して値を入れてく方法
+
+N = int(input())
+
+A = [0] * N
+values = input().split()
+for i in range(N):
+    A[i] = int(values[i])
+
+for a in A:
+    print(a)
