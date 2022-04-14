@@ -327,3 +327,15 @@ for i in range(N):
 
 for a in A:
     print(a)
+
+# flagで判定
+
+n = [10, 13, 21, 1, 6, 51, 10, 8, 15, 6]
+flag = False
+for i in n:
+    if i == 6:
+        print("Yes")
+        flag = True
+        break
+if not flag:
+    print("No")
