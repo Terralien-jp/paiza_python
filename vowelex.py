@@ -339,3 +339,27 @@ for i in n:
         break
 if not flag:
     print("No")
+
+# 二次元配列を二重ループで出力
+li = [[6, 5, 4, 3, 2, 1], [3, 1, 8, 8, 1, 3]]
+
+for i in range(len(li)):
+    for j in range(len(li[i])):
+        print(li[i][j], end="")
+
+        if j < len(li[i]) - 1:
+            print(end=" ")
+        else:
+            print()
+
+# 二次元配列の入力など
+n, m, k, l = map(int, input().split())
+# 二次元配列のから配列を作成
+list = [[0] * m for i in range(n)]
+# 空の二次配列に標準入力から値を入れていく
+for i in range(n):
+    value = input().split()
+    for j in range(m):
+        list[i][j] = int(value[j])
+# 完成した二次元配列から指定された部分を表示
+print(list[k-1][l-1])
