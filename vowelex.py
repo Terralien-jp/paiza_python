@@ -372,3 +372,11 @@ a = b
 b = tmp
 
 print(a, b)
+
+# 配列内で入れ替え
+A, B, N = map(int, input().split())
+a = [int(x) for x in input().split()]
+
+a[A-1], a[B-1] = a[B-1], a[A-1]
+for ele in a:
+    print(ele)
