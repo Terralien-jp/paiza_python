@@ -363,3 +363,12 @@ for i in range(n):
         list[i][j] = int(value[j])
 # 完成した二次元配列から指定された部分を表示
 print(list[k-1][l-1])
+
+# tmpを使って入れ替え
+a, b = map(int, input().split())
+
+tmp = a
+a = b
+b = tmp
+
+print(a, b)
