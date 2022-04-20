@@ -380,3 +380,17 @@ a = [int(x) for x in input().split()]
 a[A-1], a[B-1] = a[B-1], a[A-1]
 for ele in a:
     print(ele)
+
+# スライスを用いる
+A, B, N = map(int, input().split())
+a = [int(x) for x in input().split()]
+# A-1からBの範囲をスライスして出力
+for ele in a[A-1:B]:
+    print(ele)
+
+# 配列を逆に
+n = int(input())
+list = [int(x) for x in input().split()]
+lists = reversed(list)
+for i in lists:
+    print(i)
