@@ -394,3 +394,16 @@ list = [int(x) for x in input().split()]
 lists = reversed(list)
 for i in lists:
     print(i)
+
+# count関数使えってことだったらしい
+N, M = map(int, input().split())
+A = [int(x) for x in input().split()]
+
+print(A.count(M))
+
+# 要素の削除
+n, m = map(int, input().split())
+list = [int(x) for x in input().split()]
+del list[m-1]
+for i in list:
+    print(i)

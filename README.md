@@ -203,5 +203,12 @@ while item_cnt > 0:
   item_cnt = item_cnt - 1
 ```
 
-### enumarate()
-列挙する
+### 列挙する
+enumarate()
+
+
+### ソートする
+sorted()
+
+### 反転する
+reversed
