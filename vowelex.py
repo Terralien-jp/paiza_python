@@ -407,3 +407,10 @@ list = [int(x) for x in input().split()]
 del list[m-1]
 for i in list:
     print(i)
+
+# 要素の挿入
+N, M, K = map(int, input().split())
+list = [int(x) for x in input().split()]
+list.insert(M-1, K)
+for i in list:
+    print(i)
