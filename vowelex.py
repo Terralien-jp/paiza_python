@@ -420,3 +420,15 @@ list = [1, 3, 5, 1, 2, 3, 6, 6, 5, 1, 4]
 sort = sorted(set(list))
 for i in sort:
     print(i)
+
+# マンハッタン距離とか言うのを使用し点2.3からの各点の距離を求める
+N = int(input())
+x = [0] * N
+y = [0] * N
+for i in range(N):
+    value = input().split()
+    x[i] = int(value[0])
+    y[i] = int(value[1])
+
+for i in range(N):
+    print(abs(x[i]-2) + abs(y[i]-3))
