@@ -432,3 +432,18 @@ for i in range(N):
 
 for i in range(N):
     print(abs(x[i]-2) + abs(y[i]-3))
+
+# フィボナッチ数
+# リスト数入力と初期化
+N = int(input())
+list = [0] * N
+# 1以下はこういう決まり
+list[0] = 0
+list[1] = 1
+
+for i in range(2, N):
+    # 2以降はこういう決まり
+        list[i] = list[i-2] + list[i-1]
+
+for i in list:
+    print(i)
