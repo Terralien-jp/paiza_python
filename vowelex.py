@@ -414,3 +414,9 @@ list = [int(x) for x in input().split()]
 list.insert(M-1, K)
 for i in list:
     print(i)
+
+# 並び替えて重複を除くsortしてset
+list = [1, 3, 5, 1, 2, 3, 6, 6, 5, 1, 4]
+sort = sorted(set(list))
+for i in sort:
+    print(i)
