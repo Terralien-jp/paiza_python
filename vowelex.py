@@ -455,3 +455,13 @@ for i in range(1, n + 1):
         print(i, end=" ")
     else:
         print(i)
+
+# N行K列出力する二重ループ
+N, K = map(int, input().split())
+for i in range(1, K+1):
+    for i in range(1, N+1):
+        if i == N:
+            print(i)
+        else:
+            print(i, end=" ")
+print()
