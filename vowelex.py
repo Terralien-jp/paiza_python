@@ -447,3 +447,11 @@ for i in range(2, N):
 
 for i in list:
     print(i)
+
+# ブランク明けて横並び出力
+n = int(input())
+for i in range(1, n + 1):
+    if i != n:
+        print(i, end=" ")
+    else:
+        print(i)
