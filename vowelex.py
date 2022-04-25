@@ -465,3 +465,18 @@ for i in range(1, K+1):
         else:
             print(i, end=" ")
 print()
+
+# 二次元配列、なんか2行目のKは_でもいけるっぽい習った気がするけど忘れた…
+# この場合戻り地を保存しないとのこと
+
+N, K = map(int, input().split())
+list = [input().split() for K in range(N)]
+# list = [input().split() for _ in range(N)]
+
+for i in range(N):
+    for j in range(K):
+        if j == K-1:
+            print(list[i][j])
+        else:
+            print(list[i][j], end=" ")
+print()
