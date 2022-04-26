@@ -502,3 +502,45 @@ for i in range(N):
         if value >= maxvalue:
             maxvalue = value
 print(maxvalue)
+
+# sum使わない模様
+N, K = map(int, input().split())
+list = [[int(i) for i in input().split()] for _ in range(N)]
+for i in range(N):
+    print(sum(list[i]))
+
+# 1列目を除外するのにifを使った
+N = int(input())
+list = [[int(i) for i in input().split()] for _ in range(N)]
+for i in list:
+    value = 0
+    for j in range(len(i)):
+        if j != 0:
+            value += i[j]
+    print(value)
+
+#スライスを使う方法もある模様
+n = int(input())
+
+for _ in range(n):
+    k_a = [int(i) for i in input().split()]
+    # nで良かろうものをkとして定義
+    k = k_a[0]
+    # 配列の１～をaに代入
+    a = k_a[1:]
+    # （列の）合計値初期化
+    s = 0
+    for i in range(k):
+        s += a[i]
+    print(s)
+
+# Nの階段作るやつ
+N = int(input())
+for i in range(1, N+1):
+    # 列をiまで繰り返す（範囲を１～i（i+1)とする）
+    for j in range(1, i+1):
+        # 最大範囲が列の末となる
+        if j == i:
+            print(j)
+        else:
+            print(j, end=" ")
