@@ -480,3 +480,25 @@ for i in range(N):
         else:
             print(list[i][j], end=" ")
 print()
+
+# なんかしらんけどnとk逆にしててはまってた
+n, k = map(int, input().split())
+a = [input().split() for _ in range(n)]
+
+for i in range(n):
+    for j in range(k):
+        if a[i][j] == "1":
+            print(i + 1, j + 1)
+            break
+
+# 正解したもののもうちょいスマートにやれる模様
+N, K = map(int, input().split())
+# ここを工夫するとint化するためにvalue変数作らずにすむ
+list = [input().split() for _ in range(N)]
+maxvalue = 0
+for i in range(N):
+    for j in range(K):
+        value = int(list[i][j])
+        if value >= maxvalue:
+            maxvalue = value
+print(maxvalue)
