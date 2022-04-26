@@ -544,3 +544,17 @@ for i in range(1, N+1):
             print(j)
         else:
             print(j, end=" ")
+
+# 掛けた数字が0以下のこともあるんやでｗとかいうクソトラップにハマったが取りうる最大値（最小値）を初期化するすべを学んだ
+N, K = map(int, input().split())
+listN = [int(i) for i in input().split()]
+listK = [int(i) for i in input().split()]
+
+maxvalue = -10000
+
+for i in range(N):
+    for j in range(K):
+        value = listN[i] * listK[j]
+        if value > maxvalue:
+            maxvalue = value
+print(maxvalue)
