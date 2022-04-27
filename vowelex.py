@@ -568,3 +568,19 @@ for i in range(K):
             print(list[j][i])
         else:
             print(list[j][i], end=" ")
+
+# かけ算表を作る問題　listの宣言方法をミスっていた。知識として0ではなくnoneを指定する方法があることを学んだ。
+n = int(input())
+a = [int(i) for i in input().split()]
+# 0ではなくnoneでも可
+list = [[0]*n for _ in range(n)]
+for i in range(n):
+    for j in range(n):
+        list[i][j] = a[i] * a[j]
+
+for i in range(n):
+    for j in range(n):
+        if j == n-1:
+            print(list[i][j])
+        else:
+            print(list[i][j], end=" ")
