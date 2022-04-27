@@ -558,3 +558,13 @@ for i in range(N):
         if value > maxvalue:
             maxvalue = value
 print(maxvalue)
+
+# てっきり配列の行列を入れ替える問題かと思ったら出力を入れ替えるだけの問題だった
+N, K = map(int, input().split())
+list = [input().split() for _ in range(N)]
+for i in range(K):
+    for j in range(N):
+        if j == N -1:
+            print(list[j][i])
+        else:
+            print(list[j][i], end=" ")
