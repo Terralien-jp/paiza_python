@@ -584,3 +584,22 @@ for i in range(n):
             print(list[i][j])
         else:
             print(list[i][j], end=" ")
+
+# 素数カウント
+n = int(input())
+# カウント変数の初期化
+ans = 0
+# 1は素数の条件に含まれるので２からSTART
+for i in range(2, n + 1):
+    # ループ完了管理フラグ
+    is_prime = True
+    # i ** (1/2) で割り切れなければ素数
+    for j in range(2, int(i ** (1 / 2)) + 1):
+        # Nの値まで２重ループを回したのでループ終了
+        if i % j == 0:
+            is_prime = False
+            break
+    if is_prime:
+        ans += 1
+
+print(ans)
