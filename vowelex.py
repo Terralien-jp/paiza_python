@@ -603,3 +603,30 @@ for i in range(2, n + 1):
         ans += 1
 
 print(ans)
+
+# log2　２が素数であることを利用した解き方
+n = int(input())
+
+ans = 0
+for i in range(1, n + 1):
+    now = i
+    # ２で割り切れる時にカウントする
+    while now % 2 == 0:
+        now //= 2
+        ans += 1
+
+print(ans)
+
+# ただのFIZZBUZZ
+hour = 24
+minit = 60
+for i in range(hour):
+    for j in range(minit):
+        if (i + j) % 3 == 0 and (i + j) % 5 == 0:
+            print('FIZZBUZZ')
+        elif (i + j) % 3 == 0:
+            print('FIZZ')
+        elif (i + j) % 5 == 0:
+            print('BUZZ')
+        else:
+            print()
