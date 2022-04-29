@@ -653,3 +653,21 @@ for i in range(Z // X + 1):
             if i + j + value < minmai:
                 minmai = i + j + value
 print(minmai)
+
+# フラグ使って直角三角形あるかどうか探すやつ
+N = int(input())
+flag = False
+
+for b in range(1, N):
+    for c in range(1, N - b):
+        a = N - b - c
+        # ここで颯爽と三平方の定理さんが登場！
+        if a ** 2 == b ** 2 + c **2:
+            flag = True
+            
+# フラグ管理について新たな知見を得た          
+if flag:
+    print("YES")
+else:
+    print("NO")
+
