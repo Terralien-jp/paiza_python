@@ -630,3 +630,26 @@ for i in range(hour):
             print('BUZZ')
         else:
             print()
+# 突然の格子点
+max = 0
+for x in range(1, 99):
+    for y in range(1, 99 - x):
+        if max < x * y and x ** 3 + y ** 3 < 100000:
+           max = x * y
+print(max)
+
+# 通貨の最小支払い枚数を求める
+X, Y, Z = map(int, input().split())
+# 1白石で支払う場合（最大枚数だがXとYが0の場合最小枚数になり得る）
+minmai = Z
+# 2重ループで通過XとYの枚数をカウント
+for i in range(Z // X + 1):
+    # 0ということもあり得る
+    for j in range(Z // Y + 1):
+        # X、Y通貨で支払った残りをvalueとして求める
+        if i * X + j * Y <= Z:
+            value = Z - i * X - j * Y
+            # 最小枚数の更新ループ
+            if i + j + value < minmai:
+                minmai = i + j + value
+print(minmai)
