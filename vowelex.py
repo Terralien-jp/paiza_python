@@ -671,3 +671,37 @@ if flag:
 else:
     print("NO")
 
+# ただカウントしただけ
+n = int(input())
+list = [int(i) for i in input().split()]
+k = int(input())
+count = 0
+for i in range(n):
+    if list[i] == k:
+        count += 1
+print(count)
+
+# flagもvalueも不要な冗長版クソコード
+n = int(input())
+a = [int(x) for x in input().split()]
+k = int(input())
+flag = False
+for i in range(n):
+    if a[i] == k:
+        flag = True
+        value = i + 1
+        break
+if flag:
+    print(value)
+else:
+    print(0)
+    
+# list.index()を使うと楽かもしれん
+n = int(input())
+a = [int(x) for x in input().split()]
+k = int(input())
+
+if k in a:
+    print(a.index(k) + 1)
+else:
+    print(0)
