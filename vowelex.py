@@ -695,7 +695,7 @@ if flag:
     print(value)
 else:
     print(0)
-    
+
 # list.index()を使うと楽かもしれん
 n = int(input())
 a = [int(x) for x in input().split()]
@@ -705,3 +705,57 @@ if k in a:
     print(a.index(k) + 1)
 else:
     print(0)
+
+# index_kは最終的に条件にあったものに上書きされるからこれでええやろとおもったら正解するも微妙に違うぽい
+n = int(input())
+list = [int(i) for i in input().split()]
+k = int(input())
+
+index_k = 0
+for i in range(n):
+    if list[i] == k:
+        index_k = i+1
+
+print(index_k)
+
+# rangeで逆向きに指定？
+n = int(input())
+a = [int(x) for x in input().split()]
+k = int(input())
+
+index_of_k = 0
+# range(start, stop[, step])
+for i in range(n - 1, -1, -1):
+    if a[i] == k:
+        index_of_k = i + 1
+        break
+
+print(index_of_k)
+
+# 簡単
+n = int(input())
+list = [int(i) for i in input().split()]
+k = int(input())
+for i in range(n):
+    if list[i] == k:
+        print(i+1)
+
+# max, min
+list = [int(i) for i in input().split()]
+print(max(list), min(list))
+
+# list.sort()を使うと最小値が左先頭に来る[0]、最大値は最後になる[-1]
+n = int(input())
+a = [int(x) for x in input().split()]
+
+a.sort()
+
+print(a[-1], a[0])
+
+# iではなく変数噛ませたほうが無難
+n = int(input())
+list = [int(x) for x in input().split()]
+for i in range(n):
+    if list[i] % 2 == 0:
+        break
+print(i+1)
